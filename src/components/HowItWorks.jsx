@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { chipImg, frameImg, frameVideo } from "../utils";
+import { chipImg, frameImg, frameVideo2 } from "../utils";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { animateWithGSAP } from "../utils/animations";
@@ -51,19 +51,20 @@ export const HowItWorks = () => {
             <div className='hiw-video'>
               <video
                 autoPlay
+                loop
                 muted
                 playsInline
                 className='pointer-events-none'
                 preload='none'
                 ref={videoRef}
               >
-                <source src={frameVideo} type='video/mp4' />
+                <source src={frameVideo2} type='video/mp4' />
               </video>
             </div>
           </div>
 
           <p className='text-gray font-semibold text-center mt-3'>
-            Honkai: Star Rail
+            JuJutsu kaisen
           </p>
         </div>
 
